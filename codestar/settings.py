@@ -131,3 +131,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+SECRET_KEY = os.environ.get("_hq%4@*c$$5^)#$#!=xo7$xe=1licw197zg7z_i2357ae69haj")
+
+print(f"SECRET_KEY: {SECRET_KEY}")
