@@ -29,7 +29,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-originalcind-djangoblog-oab8yjys0st.ws.codeinstitute-ide.net",".herokuapp.com"
 ]
@@ -136,7 +136,3 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-import os
-SECRET_KEY = os.environ.get("_hq%4@*c$$5^)#$#!=xo7$xe=1licw197zg7z_i2357ae69haj")
-
-print(f"SECRET_KEY: {SECRET_KEY}")
